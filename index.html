@@ -1,141 +1,46 @@
-<!-- 
-Oasis infobyte
-.
-.
-Tak No.--- 2
-Task Name --- Portfolio Page
- -->
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <!-- <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mine Porfolio</title>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>Calculator</title>
     <link rel="stylesheet" href="./css/style.css">
 
 </head>
 <body>
-    <header>
-        <div class="container">
-        <nav class="flex items-center justify-between">
-             <div class="left flex items-center">
-                 <div class=" branding">
-                    <img src="./images/huge-removebg-preview.png" alt="logo">
-                 </div>
-                 <div>
-                     <a href="#ho">Home</a>
-                     <a href="#ab">About</a>
-                     <a href="#se">Services</a>
-                     <a href="#">Pages</a>
-                     <a href="#">Blog</a>
-                 </div>
-                 
 
-             </div>
-             <div class="right">
-                 <button class="btn btn-primary">
-                     Contact
-                 </button>
+    <h1 id="head"> C  A  L  C  U  L  A  T  O  R </h1>
 
-             </div>
-        </nav>
-        <div id="ho" class="hero flex items-center justify-between">
-            <div class="left flex-1 flex justify-center">
-                <img src="./images/man.png" alt="">
-            </div>
-            <div class="right flex-1">
-                <h6>Suraj Mandage</h6>
-                <h1>I'M a Sowftware <span>Engineer</span></h1>
-                <p>The Program Covers Data Mgmt, Big-Data Engineering, Column Databases, Data Science & More. 
-                   Expert Faculty. 
-                   Advance Your Career Now. Top Tier University. Experiential Learning.</p>
-                   <div>
-                   <button class="btn btn-secondary">Contact</button>
-                </div>
-            </div>
-        </div>
-       
-    </header>
-    
-    <section id="ab" class="about">
-        <div class="container flex items-center">
-        <div class="flex-1">
-            <img class="about-me-img" src="./images/man2.png" alt="">
-        </div>
 
-        <div class="flex-1">
-        <h1>About <span>Me</span></h1>
-        <h3>Hello! i'm Suraj Mandage</h3>
-        <p>The Program Covers Data Mgmt, Big-Data Engineering, Column Databases, Data Science & More. 
-            Expert Faculty. 
-            Advance Your Career Now. Top Tier University. Experiential Learning.
-            The Program Covers Data Mgmt, Big-Data Engineering, Column Databases, Data Science & More. 
-            Expert Faculty. 
-            Advance Your Career Now. Top Tier University. Experiential Learning.</p>
-        
-        <div class="social">
-            <a href="#"><img src="./images/website.svg" alt=""></a>
-            <a href="#"><img src="./images/facebook.svg" alt=""></a>
-            <a href="#"><img src="./images/twitter.svg" alt=""></a>
-            <a href="#"><img src="./images/pintrest.svg" alt=""></a>
-            <a href="#"><img src="./images/instagram-3814048.svg" alt=""></a>
-        </div>
-    </div>    
+    <div class="container">
+        <form class="calculator" name="calc">
+            <input type="text" class="value" readonly name="txt">
+            <span class="num clear" onclick="calc.txt.value =' ' "><i> c </i></span>
+            <span class="num" onclick="calc.txt.value += '/' "><i> / </i></span>
+            <span class="num" onclick="calc.txt.value += '*' "><i> * </i></span>
+            <span class="num" onclick="calc.txt.value += '7' "><i> 7 </i></span>
+            <span class="num" onclick="calc.txt.value += '8' "><i> 8 </i></span>
+            <span class="num" onclick="calc.txt.value += '9' "><i> 9 </i></span>
+            <span class="num" onclick="calc.txt.value += '-' "><i> - </i></span>
+            <span class="num" onclick="calc.txt.value += '4' "><i> 4 </i></span>
+            <span class="num" onclick="calc.txt.value += '5' "><i> 5 </i></span>
+            <span class="num" onclick="calc.txt.value += '6' "><i> 6 </i></span>
+            <span class="num plus" onclick="calc.txt.value += '+' "><i> + </i></span>
+            <span class="num" onclick="calc.txt.value += '1' "><i> 1 </i></span>
+            <span class="num" onclick="calc.txt.value += '2' "><i> 2 </i></span>
+            <span class="num" onclick="calc.txt.value += '3' "><i> 3 </i></span>
+            <span class="num" onclick="calc.txt.value += '0' "><i> 0 </i></span>
+            <span class="num" onclick="calc.txt.value += '00' "><i> 00 </i></span>
+            <span class="num" onclick="calc.txt.value += '.' "><i> . </i></span>
+
+            <span class="num equal" onclick="document.calc.txt.value=eval(calc.txt.value)"><i>=</i></span>
+        </form>
     </div>
-</div>
-    </section>
 
-    <section id="se" class="techs">
-        <div class="container">
-            <h1 class="section-heading"><span> Our </span> Technolgies </h1>
-            <p>Advance Your Career Now. Top Tier University. Experiential Learning.</p>
-            <div class="card-wrapper">
-                <div class="card">
-                    <img src="./images/brush.svg" alt="">
-                    <h2>Software Devlopment</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-                <div class="card">
-                    <img src="./images/bag.svg" alt="">
-                    <h2>SaaS</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-                <div class="card">
-                    <img src="./images/code.svg" alt="">
-                    <h2>DBMS</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-                <div class="card">
-                    <img src="./images/desktop.svg" alt="">
-                    <h2>Application Devlopment</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-                <div class="card">
-                    <img src="./images/brush.svg" alt="">
-                    <h2>Bug Fixing</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-                <div class="card">
-                    <img src="./images/brush.svg" alt="">
-                    <h2>Aglile Mangement</h2>
-                    <p>Top Tier University. Experiential Learning.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    
-        <footer class="flex container" id="footer"> 
-            © Copyright 2022-23 All rights reserved to Suraj Mandage.
-        </footer>
-    
-  
+       
 </body>
+<footer id="footer">
+    <p> © Copyright 2022-23 All rights reserved to Suraj Mandage. </p>
+</footer>
 </html>
